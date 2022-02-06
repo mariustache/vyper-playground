@@ -23,7 +23,7 @@ Create Docker image by running
 ```
 docker build -t brownie_dev .
 ```
-Run the container with a mapping from local folder to container **/code**:
+Run the container with a mapping from local folder to container's **/code**:
 ```
 docker run -it -v ${pwd}:/code brownie_dev
 ```
