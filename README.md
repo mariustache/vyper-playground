@@ -17,3 +17,13 @@ Run a container that exposes the vyper compiler as a HTTP server:
 docker run -it -p 8000:8000 --expose=8000 --entrypoint /bin/bash vyperlang/vyper 
 vyper-serve -b 0.0.0.0:8000
 ```
+
+# Brownie framework usage
+Create Docker image by running
+```
+docker build -t brownie_dev .
+```
+Run the container with a mapping from local folder to container **/code**:
+```
+docker run -it -v ${pwd}:/code brownie_dev
+```
